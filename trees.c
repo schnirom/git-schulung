@@ -90,6 +90,8 @@ local ct_data static_ltree[L_CODES+2];
  * below).
  */
 
+BlaBla
+
 local ct_data static_dtree[D_CODES];
 /* The static distance tree. (Actually a trivial tree since all codes use
  * 5 bits.)
