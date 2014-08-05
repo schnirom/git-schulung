@@ -340,6 +340,8 @@ local unsigned long gf2_matrix_times(mat, vec)
     return sum;
 }
 
+// Ringwald Änderung: 2014-08-05
+
 /* ========================================================================= */
 local void gf2_matrix_square(square, mat)
     unsigned long *square;
