@@ -1,3 +1,5 @@
+
+
 2014-08-04-02: RI-Änderung/* adler32.c -- compute the Adler-32 checksum of a data stream
  * Copyright (C) 1995-2011 Mark Adler
  * For conditions of distribution and use, see copyright notice in zlib.h
@@ -35,7 +37,7 @@ local uLong adler32_combine_ OF((uLong adler1, uLong adler2, z_off64_t len2));
 #  define MOD28(a) \
     do { \
         CHOP(a); \
-        if (a >= BASE) a -= BASE; \
+        if (a > BASE) a -= BASE; \
     } while (0)
 #  define MOD(a) \
     do { \
