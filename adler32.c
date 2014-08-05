@@ -35,7 +35,7 @@ local uLong adler32_combine_ OF((uLong adler1, uLong adler2, z_off64_t len2));
 #  define MOD28(a) \
     do { \
         CHOP(a); \
-        if (a >= BASE) a -= BASE; \
+        if (a > BASE) a -= BASE; \
     } while (0)
 #  define MOD(a) \
     do { \
